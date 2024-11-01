@@ -1,0 +1,41 @@
+module memory_blocktb();
+
+	reg signal_mem_write,signal_mem_read,clk;
+	reg [31:0] address,write_data;
+	wire [31:0] read_data;
+	reg [31:0] registers[1023:0];
+
+data_memory dm(signal_mem_write,signal_mem_read,address,write_data,read_data,clk);
+
+initial begin
+	clk <= 0;
+   forever begin
+		#10 clk <= ~clk;
+	end
+end
+
+
+initial begin
+		 signal_mem_write=1;
+		 signal_mem_read=0;
+	#20 write_data = 32'd15;
+		 address = 32'd0;
+	#20 write_data= 32'd92;
+		 address = 32'd4;
+	#20 signal_mem_write=0;
+	#20 write_data = 32'd66;
+		 address = 32'd8; 
+	#20 signal_mem_read=1;
+		 address=32'd0;
+	#20 address=32'd4;
+	#30 address=32'd8;
+end
+
+
+
+initial begin
+	$monitor("memWrite:%b,memRead=%b,address=%d,write_data=%d,read_data=%d",signal_mem_write,signal_mem_read,address,write_data,read_data);
+end
+
+endmodule
+	

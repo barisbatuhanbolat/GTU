@@ -1,0 +1,236 @@
+$comment
+	File created using the following command:
+		vcd file hw2ALU.msim.vcd -direction
+$end
+$date
+	Sun Dec 10 02:54:06 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module ALUless_than_vlg_vec_tst $end
+$var reg 32 ! a [31:0] $end
+$var reg 32 " b [31:0] $end
+$var wire 1 # less_than $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * less_than~output_o $end
+$var wire 1 + a[17]~input_o $end
+$var wire 1 , b[17]~input_o $end
+$var wire 1 - a[20]~input_o $end
+$var wire 1 . b[20]~input_o $end
+$var wire 1 / a[19]~input_o $end
+$var wire 1 0 b[19]~input_o $end
+$var wire 1 1 a[18]~input_o $end
+$var wire 1 2 b[18]~input_o $end
+$var wire 1 3 sub|sub|FA20|carry_of_sum_2~0_combout $end
+$var wire 1 4 a[16]~input_o $end
+$var wire 1 5 b[16]~input_o $end
+$var wire 1 6 sub|sub|FA20|carry_of_sum_2~1_combout $end
+$var wire 1 7 a[15]~input_o $end
+$var wire 1 8 b[15]~input_o $end
+$var wire 1 9 sub|sub|FA15|sum_of_digits~combout $end
+$var wire 1 : a[14]~input_o $end
+$var wire 1 ; b[14]~input_o $end
+$var wire 1 < sub|sub|FA14|sum_of_digits~combout $end
+$var wire 1 = a[8]~input_o $end
+$var wire 1 > b[8]~input_o $end
+$var wire 1 ? a[10]~input_o $end
+$var wire 1 @ b[10]~input_o $end
+$var wire 1 A a[13]~input_o $end
+$var wire 1 B b[13]~input_o $end
+$var wire 1 C a[12]~input_o $end
+$var wire 1 D b[12]~input_o $end
+$var wire 1 E a[11]~input_o $end
+$var wire 1 F b[11]~input_o $end
+$var wire 1 G sub|sub|FA13|carry_of_sum_2~0_combout $end
+$var wire 1 H a[9]~input_o $end
+$var wire 1 I b[9]~input_o $end
+$var wire 1 J sub|sub|FA13|carry_of_sum_2~1_combout $end
+$var wire 1 K a[7]~input_o $end
+$var wire 1 L b[7]~input_o $end
+$var wire 1 M sub|sub|FA7|sum_of_digits~combout $end
+$var wire 1 N a[3]~input_o $end
+$var wire 1 O b[3]~input_o $end
+$var wire 1 P a[2]~input_o $end
+$var wire 1 Q b[2]~input_o $end
+$var wire 1 R a[1]~input_o $end
+$var wire 1 S b[1]~input_o $end
+$var wire 1 T a[0]~input_o $end
+$var wire 1 U b[0]~input_o $end
+$var wire 1 V sub|sub|FA6|final_carry_out~0_combout $end
+$var wire 1 W a[6]~input_o $end
+$var wire 1 X b[6]~input_o $end
+$var wire 1 Y a[5]~input_o $end
+$var wire 1 Z b[5]~input_o $end
+$var wire 1 [ a[4]~input_o $end
+$var wire 1 \ b[4]~input_o $end
+$var wire 1 ] sub|sub|FA6|final_carry_out~1_combout $end
+$var wire 1 ^ sub|sub|FA6|final_carry_out~2_combout $end
+$var wire 1 _ sub|sub|FA6|final_carry_out~3_combout $end
+$var wire 1 ` sub|sub|FA13|carry_of_sum_2~2_combout $end
+$var wire 1 a sub|sub|FA13|final_carry_out~0_combout $end
+$var wire 1 b sub|sub|FA13|final_carry_out~1_combout $end
+$var wire 1 c sub|sub|FA13|final_carry_out~2_combout $end
+$var wire 1 d sub|sub|FA20|final_carry_out~0_combout $end
+$var wire 1 e sub|sub|FA20|final_carry_out~1_combout $end
+$var wire 1 f sub|sub|FA20|final_carry_out~2_combout $end
+$var wire 1 g sub|sub|FA20|final_carry_out~combout $end
+$var wire 1 h a[24]~input_o $end
+$var wire 1 i b[24]~input_o $end
+$var wire 1 j a[27]~input_o $end
+$var wire 1 k b[27]~input_o $end
+$var wire 1 l a[26]~input_o $end
+$var wire 1 m b[26]~input_o $end
+$var wire 1 n a[25]~input_o $end
+$var wire 1 o b[25]~input_o $end
+$var wire 1 p sub|sub|FA27|carry_of_sum_2~0_combout $end
+$var wire 1 q a[23]~input_o $end
+$var wire 1 r b[23]~input_o $end
+$var wire 1 s sub|sub|FA23|sum_of_digits~combout $end
+$var wire 1 t a[22]~input_o $end
+$var wire 1 u b[22]~input_o $end
+$var wire 1 v sub|sub|FA22|sum_of_digits~combout $end
+$var wire 1 w a[21]~input_o $end
+$var wire 1 x b[21]~input_o $end
+$var wire 1 y sub|sub|FA21|sum_of_digits~combout $end
+$var wire 1 z sub|sub|FA27|carry_of_sum_2~1_combout $end
+$var wire 1 { sub|sub|FA27|carry_of_sum_2~2_combout $end
+$var wire 1 | sub|sub|FA27|final_carry_out~0_combout $end
+$var wire 1 } sub|sub|FA27|final_carry_out~1_combout $end
+$var wire 1 ~ sub|sub|FA27|final_carry_out~2_combout $end
+$var wire 1 !! a[30]~input_o $end
+$var wire 1 "! b[30]~input_o $end
+$var wire 1 #! a[29]~input_o $end
+$var wire 1 $! b[29]~input_o $end
+$var wire 1 %! a[28]~input_o $end
+$var wire 1 &! b[28]~input_o $end
+$var wire 1 '! sub|sub|FA30|carry_of_sum_2~0_combout $end
+$var wire 1 (! sub|sub|FA30|final_carry_out~0_combout $end
+$var wire 1 )! a[31]~input_o $end
+$var wire 1 *! b[31]~input_o $end
+$var wire 1 +! sub|sub|FA31|sum_of_digits_2~0_combout $end
+$var wire 1 ,! sub|sub|FA31|sum_of_digits_2~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111 !
+b101000 "
+1#
+0$
+1%
+x&
+1'
+1(
+1)
+1*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+13
+04
+05
+16
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+0H
+0I
+1J
+0K
+0L
+0M
+0N
+1O
+1P
+0Q
+1R
+0S
+1T
+0U
+0V
+0W
+0X
+0Y
+1Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+1b
+1c
+0d
+1e
+1f
+1g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+1p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+1z
+1{
+0|
+1}
+1~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+1'!
+0(!
+0)!
+0*!
+0+!
+0,!
+$end
+#1000000

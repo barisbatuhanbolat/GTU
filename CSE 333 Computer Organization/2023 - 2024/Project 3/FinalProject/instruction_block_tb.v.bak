@@ -1,0 +1,37 @@
+// Testbench module
+module instruction_block_tb;
+
+// Input signals
+reg clk;
+reg [31:0] pc;
+
+// Output signal
+wire [31:0] instruction;
+
+// DUT instantiation
+instruction_block dut (
+	.clk(clk),
+	.pc(pc),
+	.instruction(instruction)
+);
+
+// Initial block
+initial begin
+	// Initialize input signals
+	clk = 0;
+	pc = 0;
+	
+	// Run simulation for 1000 ns
+	#1000;
+	
+	// Stop simulation
+	$finish;
+end
+
+// Clock generator
+always #5 clk = ~clk;
+
+// Monitor output signal
+initial $monitor ($time, " pc = %h, instruction = %h", pc, instruction);
+
+endmodule

@@ -1,0 +1,6 @@
+Barış Batuhan Bolat
+210104004029
+-Kod windows üzerinde DevC++ programı kullanılarak yazılmıştır. Kullanılan kütüphane win32 api gerektirdğinden 
+Linuxta çalışmaz. 
+-Port değiştirmek için arduino_serial_library.h içerisindeki iki fonksiyonun da port kısmına kendi portunuzu yazınız.
+-Video youtubeye liste dışı olarak yüklendi sadece attığım linkten görebilirsiniz.

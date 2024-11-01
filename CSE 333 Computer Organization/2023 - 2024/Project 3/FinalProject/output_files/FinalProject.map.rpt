@@ -1,0 +1,451 @@
+Analysis & Synthesis report for FinalProject
+Fri Jan 19 19:24:37 2024
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Jan 19 19:24:37 2024       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; FinalProject                                ;
+; Top-level Entity Name           ; register_block                              ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 1056                                        ;
+; Total pins                      ; 113                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; register_block     ; FinalProject       ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
+; register_block.v                 ; yes             ; User Verilog HDL File  ; C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/register_block.v ;         ;
+; registers.mem                    ; yes             ; User Unspecified File  ; C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/registers.mem    ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 864       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 737       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 543       ;
+;     -- 5 input functions                    ; 192       ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 2         ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 1056      ;
+;                                             ;           ;
+; I/O pins                                    ; 113       ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 1056      ;
+; Total fan-out                               ; 7503      ;
+; Average fan-out                             ; 3.72      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+----------------+--------------+
+; |register_block            ; 737 (737)           ; 1056 (1056)               ; 0                 ; 0          ; 113  ; 0            ; |register_block     ; register_block ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++----------------------------------------+---------------------------------------+
+; Register name                          ; Reason for Removal                    ;
++----------------------------------------+---------------------------------------+
+; registers[0][0]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][1]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][2]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][3]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][4]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][5]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][6]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][7]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][8]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][9]                        ; Stuck at GND due to stuck port sclear ;
+; registers[0][10]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][11]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][12]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][13]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][14]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][15]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][16]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][17]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][18]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][19]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][20]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][21]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][22]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][23]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][24]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][25]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][26]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][27]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][28]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][29]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][30]                       ; Stuck at GND due to stuck port sclear ;
+; registers[0][31]                       ; Stuck at GND due to stuck port sclear ;
+; Total Number of Removed Registers = 32 ;                                       ;
++----------------------------------------+---------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1056  ;
+; Number of registers using Synchronous Clear  ; 992   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[31][0]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[30][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[29][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[28][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[27][11]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[26][7]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[25][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[24][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[23][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[22][9]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[21][23]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[20][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[19][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[18][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[17][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[16][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[15][6]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[14][1]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[13][12]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[12][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[11][6]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[10][2]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[9][16]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[8][26]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[7][13]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[6][11]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[5][11]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[4][20]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[3][8]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[2][8]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[1][7]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |register_block|registers[0][31]   ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; Yes        ; |register_block|read_data1[0]~reg0 ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; Yes        ; |register_block|read_data2[2]~reg0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 1056                        ;
+;     SCLR              ; 992                         ;
+;     plain             ; 64                          ;
+; arriav_lcell_comb     ; 737                         ;
+;     normal            ; 737                         ;
+;         2 data inputs ; 2                           ;
+;         5 data inputs ; 192                         ;
+;         6 data inputs ; 543                         ;
+; boundary_port         ; 113                         ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.69                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Fri Jan 19 19:24:28 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FinalProject -c FinalProject
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file register_block.v
+    Info (12023): Found entity 1: register_block File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/register_block.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_block.v
+    Info (12023): Found entity 1: instruction_block File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/instruction_block.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memory_block.v
+    Info (12023): Found entity 1: memory_block File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/memory_block.v Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file control_unit.v
+    Info (12023): Found entity 1: control_unit File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/control_unit.v Line: 1
+    Info (12023): Found entity 2: dec13 File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/control_unit.v Line: 52
+Info (12021): Found 1 design units, including 1 entities, in source file control_tb.v
+    Info (12023): Found entity 1: control_tb File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/control_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file _2x1mux.v
+    Info (12023): Found entity 1: _2x1Mux File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/_2x1Mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file _4x1mux.v
+    Info (12023): Found entity 1: _4x1Mux File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/_4x1Mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file _8x1mux.v
+    Info (12023): Found entity 1: _8x1Mux File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/_8x1Mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: adder File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aluand.v
+    Info (12023): Found entity 1: ALUand File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUand.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aluless_than.v
+    Info (12023): Found entity 1: ALUless_than File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUless_than.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alunor.v
+    Info (12023): Found entity 1: ALUnor File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUnor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aluor.v
+    Info (12023): Found entity 1: ALUor File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aluxor.v
+    Info (12023): Found entity 1: ALUxor File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUxor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cla_4bit.v
+    Info (12023): Found entity 1: cla_4bit File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/cla_4bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cla_16bit.v
+    Info (12023): Found entity 1: cla_16bit File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/cla_16bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder.v
+    Info (12023): Found entity 1: fullAdder File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/fullAdder.v Line: 1
+Info (12021): Found 3 design units, including 3 entities, in source file subtractor.v
+    Info (12023): Found entity 1: subtractor File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/subtractor.v Line: 1
+    Info (12023): Found entity 2: full_subtractor File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/subtractor.v Line: 50
+    Info (12023): Found entity 3: subtractor_adder File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/subtractor.v Line: 66
+Info (12021): Found 1 design units, including 1 entities, in source file alu_control.v
+    Info (12023): Found entity 1: alu_control File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sign_extend.v
+    Info (12023): Found entity 1: sign_extend File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/sign_extend.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_left_2.v
+    Info (12023): Found entity 1: shift_left_2 File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/shift_left_2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mips.v
+    Info (12023): Found entity 1: mips File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/mips.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memory_blocktb.v
+    Info (12023): Found entity 1: memory_blocktb File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/memory_blocktb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mips_testbench.v
+    Info (12023): Found entity 1: mips_testbench File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/mips_testbench.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file register_block_tb.v
+    Info (12023): Found entity 1: register_block_tb File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/register_block_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_block_tb.v
+    Info (12023): Found entity 1: instruction_block_tb File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/instruction_block_tb.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(6): created implicit net for "andc1" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(7): created implicit net for "andc2" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(8): created implicit net for "andc3" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(9): created implicit net for "andc4" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(12): created implicit net for "andc5" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(13): created implicit net for "andc6" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(14): created implicit net for "andc7" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(17): created implicit net for "andc8" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(18): created implicit net for "andc9" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(19): created implicit net for "andc10" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at alu_control.v(20): created implicit net for "andc11" File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v Line: 20
+Info (12127): Elaborating entity "register_block" for the top level hierarchy
+Warning (10175): Verilog HDL warning at register_block.v(14): ignoring unsupported system task File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/register_block.v Line: 14
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/output_files/FinalProject.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1842 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 49 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 1729 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Fri Jan 19 19:24:37 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:13
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/output_files/FinalProject.map.smsg.
+
+

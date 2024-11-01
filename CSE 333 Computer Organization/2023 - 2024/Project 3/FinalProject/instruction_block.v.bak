@@ -1,0 +1,13 @@
+module instruction_block(
+	input clk;
+	input [31:0] prog_ctr;
+	output reg [31:0] instr;
+);
+	reg [31:0] instructions[255:0];
+	
+	always @(negedge clk) begin
+			instr <= instructions[prog_ctr/4];
+	end
+	
+	
+endmodule

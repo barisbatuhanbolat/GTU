@@ -1,0 +1,48 @@
+Quartus Prime Archive log --	C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/FinalProject.qarlog
+
+Archive:	C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/FinalProject.qar
+Date:		Fri Jan 19 19:39:09 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUand.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUless_than.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUnor.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUor.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/ALUxor.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/FinalProject.qpf
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/FinalProject.qsf
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/Waveform6.vwf
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/_2x1Mux.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/_4x1Mux.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/_8x1Mux.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/adder.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/alu_control.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/cla_16bit.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/cla_4bit.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/control_tb.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/control_unit.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/fullAdder.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/instruction_block.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/instruction_block_tb.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/instructions.mem
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/memory.mem
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/memory_block.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/memory_blocktb.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/mips.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/mips_testbench.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/register_block.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/register_block_tb.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/registers.mem
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/shift_left_2.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/sign_extend.v
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/simulation/modelsim/instructions.mem
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/simulation/modelsim/memory.mem
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/simulation/modelsim/registers.mem
+C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/subtractor.v
+e:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 37 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

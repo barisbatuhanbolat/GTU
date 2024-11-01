@@ -1,0 +1,69 @@
+module register_block_tb;
+    // Declare the inputs and outputs of the module
+    reg [31:0] write_data;
+    reg [4:0] read_reg1, read_reg2, write_reg;
+    reg regWrite, clk;
+    wire [31:0] read_data1, read_data2;
+
+    // Instantiate the module under test
+    register_block dut (
+        .write_data(write_data),
+        .read_reg1(read_reg1),
+        .read_reg2(read_reg2),
+        .write_reg(write_reg),
+        .regWrite(regWrite),
+        .clk(clk),
+        .read_data1(read_data1),
+        .read_data2(read_data2)
+    );
+
+    // Generate a clock signal with a period of 10 ns
+    always #5 clk = ~clk;
+
+    // Initialize the inputs
+    initial begin
+        clk = 0;
+        write_data = 0;
+        read_reg1 = 0;
+        read_reg2 = 0;
+        write_reg = 0;
+        regWrite = 0;
+    end
+
+    // Apply some test vectors
+    initial begin
+        // Wait for the first positive edge of the clock
+        @(posedge clk);
+
+        // Write 42 to register 1
+        write_data = 42;
+        write_reg = 1;
+        regWrite = 1;
+        // Wait for the next positive edge of the clock
+        @(posedge clk);
+
+        // Write 17 to register 2
+        write_data = 17;
+        write_reg = 2;
+        // Wait for the next positive edge of the clock
+        @(posedge clk);
+
+        // Stop writing
+        regWrite = 0;
+        // Wait for the next negative edge of the clock
+        @(negedge clk);
+
+        // Read register 1 and 2
+        read_reg1 = 1;
+        read_reg2 = 2;
+        // Wait for the next negative edge of the clock
+        @(negedge clk);
+
+        // Display the read data
+        $display("Read data 1: %d", read_data1);
+        $display("Read data 2: %d", read_data2);
+
+        // End the simulation
+        $finish;
+    end
+endmodule

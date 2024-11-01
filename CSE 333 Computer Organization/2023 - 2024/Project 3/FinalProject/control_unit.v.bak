@@ -1,0 +1,18 @@
+module control_unit(
+	input [5:0] opcode,
+	output regDst,branch,bne,memRead,memToReg,memWrite,ALUSrc,regWrite,
+	output [2:0] ALUop
+);
+assign regDst = ~opcode[3] & ~opcode[2] & ~opcode[1] & ~opcode[0];
+assign branch = ~opcode[3] & opcode[2] & ~opcode[1] & opcode[0];
+assign bne = ~opcode[3] & opcode[2] & opcode[1] & ~opcode[0];
+assign memRead = opcode[3] & ~opcode[2] & ~opcode[1] & ~opcode[0];
+assign memToReg = opcode[3] & ~opcode[2] & ~opcode[1] & ~opcode[0];
+assign memWrite = opcode[3] & opcode[0];
+assign ALUSrc = opcode[3]&~opcode[2]&~opcode[1] | ~opcode[3]&(opcode[2]&~opcode[1]&~opcode[0]|~opcode[2]&opcode[0]|~opcode[2]&opcode[1]|opcode[1]&opcode[0]);
+assign regWrite = ~(branch | memWrite);
+assign ALUop[2] = opcode[2];
+assign ALUop[1] = opcode[1];
+assign ALUop[0] = ~opcode[3] & opcode[0] | opcode[3] & ~opcode[2] & ~opcode[1];
+
+endmodule

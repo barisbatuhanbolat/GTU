@@ -1,0 +1,14 @@
+module alu_control(aluOp,func,aluCtr);
+
+input [2:0] aluOp,func;
+output[2:0] aluCtr;
+
+wire isRtype;
+assign isRtype = ~aluOp[2]&~aluOp[1]&~aluOp[0];
+
+assign aluCtr[2] = (isRtype & func[1]) | (aluOp[2]&(aluOp[1] | aluOp[0]));
+assign aluCtr[1] = (isRtype & func[2]) | (aluOp[1]&aluOp[0] | aluOp[2]&~aluOp[1]&~aluOp[0]);
+assign aluCtr[0] = (isRtype & ~func[0]) | (aluOp[1]&~aluOp[0] | aluOp[2]&~aluOp[1]);
+
+
+endmodule

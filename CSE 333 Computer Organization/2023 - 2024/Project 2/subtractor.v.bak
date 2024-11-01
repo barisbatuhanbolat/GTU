@@ -1,0 +1,10 @@
+module subtractor( 
+	   input [31:0] a, b, // Inputs for the adder 
+		output [31:0] dif, // Sum output for the adder 
+		output cout // Carry out for the adder
+);
+		wire [31:0] rev_b;
+		
+		ALUnor(b,0,rev_b);
+
+

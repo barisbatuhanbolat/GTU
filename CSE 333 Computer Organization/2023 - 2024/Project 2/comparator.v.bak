@@ -1,0 +1,15 @@
+module comparator ( 
+		output lt, // The less than signal 
+		input [31:0] x, y // The two numbers to compare 
+);
+
+// Declare a 33-bit wire for the subtraction
+wire [32:0] sub;
+
+// Subtract y from x and store the result
+assign sub = x - y;
+
+// The less than signal is the sign bit of the subtraction
+assign lt = sub[32];
+
+endmodule

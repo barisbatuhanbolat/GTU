@@ -1,0 +1,6 @@
+
+State Machine - |alu|mod:mod_inst|mod_cu:ctrl_inst|state
+Name state.IDLE state.SUBTRACT state.LOAD_A 
+state.IDLE 0 0 0 
+state.LOAD_A 1 0 1 
+state.SUBTRACT 1 1 0 

@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at control_unit.v(4): object "jump" differs only in case from object "JUMP" in the same scope File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/control_unit.v Line: 4
+Info (10281): Verilog HDL Declaration information at control_unit.v(5): object "move" differs only in case from object "MOVE" in the same scope File: C:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/control_unit.v Line: 5

@@ -1,0 +1,138 @@
+module adder (
+    input wire [31:0] a,
+    input wire [31:0] b,
+    output wire [31:0] sum,
+    output wire cout
+);
+
+// SIGNALS FOR PRIMITIVE GATES
+wire [31:0] p, g;
+
+// BLOCK 1
+// p = a | ~b
+// g = a & b
+// Generate signal using AND gate
+or (p[0], a[0], ~b[0]); and (g[0], a[0], b[0]);
+or (p[1], a[1], ~b[1]); and (g[1], a[1], b[1]);
+or (p[2], a[2], ~b[2]); and (g[2], a[2], b[2]);
+or (p[3], a[3], ~b[3]); and (g[3], a[3], b[3]);
+or (p[4], a[4], ~b[4]); and (g[4], a[4], b[4]);
+or (p[5], a[5], ~b[5]); and (g[5], a[5], b[5]);
+or (p[6], a[6], ~b[6]); and (g[6], a[6], b[6]);
+or (p[7], a[7], ~b[7]); and (g[7], a[7], b[7]);
+
+or (p[8], a[8], ~b[8]); and (g[8], a[8], b[8]);
+or (p[9], a[9], ~b[9]); and (g[9], a[9], b[9]);
+or (p[10], a[10], ~b[10]); and (g[10], a[10], b[10]);
+or (p[11], a[11], ~b[11]); and (g[11], a[11], b[11]);
+or (p[12], a[12], ~b[12]); and (g[12], a[12], b[12]);
+or (p[13], a[13], ~b[13]); and (g[13], a[13], b[13]);
+or (p[14], a[14], ~b[14]); and (g[14], a[14], b[14]);
+or (p[15], a[15], ~b[15]); and (g[15], a[15], b[15]);
+
+or (p[16], a[16], ~b[16]); and (g[16], a[16], b[16]);
+or (p[17], a[17], ~b[17]); and (g[17], a[17], b[17]);
+or (p[18], a[18], ~b[18]); and (g[18], a[18], b[18]);
+or (p[19], a[19], ~b[19]); and (g[19], a[19], b[19]);
+or (p[20], a[20], ~b[20]); and (g[20], a[20], b[20]);
+or (p[21], a[21], ~b[21]); and (g[21], a[21], b[21]);
+or (p[22], a[22], ~b[22]); and (g[22], a[22], b[22]);
+or (p[23], a[23], ~b[23]); and (g[23], a[23], b[23]);
+
+or (p[24], a[24], ~b[24]); and (g[24], a[24], b[24]);
+or (p[25], a[25], ~b[25]); and (g[25], a[25], b[25]);
+or (p[26], a[26], ~b[26]); and (g[26], a[26], b[26]);
+or (p[27], a[27], ~b[27]); and (g[27], a[27], b[27]);
+or (p[28], a[28], ~b[28]); and (g[28], a[28], b[28]);
+or (p[29], a[29], ~b[29]); and (g[29], a[29], b[29]);
+or (p[30], a[30], ~b[30]); and (g[30], a[30], b[30]);
+or (p[31], a[31], ~b[31]); and (g[31], a[31], b[31]);
+
+// BLOCK 2
+// Propagate signal using OR gate
+wire [31:0] pg;
+
+or (pg[0], p[0], g[0]);
+or (pg[1], p[1], g[1]);
+or (pg[2], p[2], g[2]);
+or (pg[3], p[3], g[3]);
+or (pg[4], p[4], g[4]);
+or (pg[5], p[5], g[5]);
+or (pg[6], p[6], g[6]);
+or (pg[7], p[7], g[7]);
+
+or (pg[8], p[8], g[8]);
+or (pg[9], p[9], g[9]);
+or (pg[10], p[10], g[10]);
+or (pg[11], p[11], g[11]);
+or (pg[12], p[12], g[12]);
+or (pg[13], p[13], g[13]);
+or (pg[14], p[14], g[14]);
+or (pg[15], p[15], g[15]);
+
+or (pg[16], p[16], g[16]);
+or (pg[17], p[17], g[17]);
+or (pg[18], p[18], g[18]);
+or (pg[19], p[19], g[19]);
+or (pg[20], p[20], g[20]);
+or (pg[21], p[21], g[21]);
+or (pg[22], p[22], g[22]);
+or (pg[23], p[23], g[23]);
+
+or (pg[24], p[24], g[24]);
+or (pg[25], p[25], g[25]);
+or (pg[26], p[26], g[26]);
+or (pg[27], p[27], g[27]);
+or (pg[28], p[28], g[28]);
+or (pg[29], p[29], g[29]);
+or (pg[30], p[30], g[30]);
+or (cout, p[31], g[31]);
+
+// ... and so on for the rest of the 32 bits
+
+// BLOCK 3
+// Cout is the last PG value
+assign cout = pg[31];
+
+// BLOCK 4
+// Final sum generation using XOR gate
+xor (sum[0], a[0], b[0], pg[0]);
+xor (sum[1], a[1], b[1], pg[1]);
+xor (sum[2], a[2], b[2], pg[2]);
+xor (sum[3], a[3], b[3], pg[3]);
+xor (sum[4], a[4], b[4], pg[4]);
+xor (sum[5], a[5], b[5], pg[5]);
+xor (sum[6], a[6], b[6], pg[6]);
+xor (sum[7], a[7], b[7], pg[7]);
+
+xor (sum[8], a[8], b[8], pg[8]);
+xor (sum[9], a[9], b[9], pg[9]);
+xor (sum[10], a[10], b[10], pg[10]);
+xor (sum[11], a[11], b[11], pg[11]);
+xor (sum[12], a[12], b[12], pg[12]);
+xor (sum[13], a[13], b[13], pg[13]);
+xor (sum[14], a[14], b[14], pg[14]);
+xor (sum[15], a[15], b[15], pg[15]);
+
+xor (sum[16], a[16], b[16], pg[16]);
+xor (sum[17], a[17], b[17], pg[17]);
+xor (sum[18], a[18], b[18], pg[18]);
+xor (sum[19], a[19], b[19], pg[19]);
+xor (sum[20], a[20], b[20], pg[20]);
+xor (sum[21], a[21], b[21], pg[21]);
+xor (sum[22], a[22], b[22], pg[22]);
+xor (sum[23], a[23], b[23], pg[23]);
+
+xor (sum[16], a[16], b[16], pg[16]);
+xor (sum[17], a[17], b[17], pg[17]);
+xor (sum[18], a[18], b[18], pg[18]);
+xor (sum[19], a[19], b[19], pg[19]);
+xor (sum[20], a[20], b[20], pg[20]);
+xor (sum[21], a[21], b[21], pg[21]);
+xor (sum[22], a[22], b[22], pg[22]);
+xor (sum[23], a[23], b[23], pg[23]);
+
+
+// ... and so on for the rest of the 32 bits
+
+endmodule

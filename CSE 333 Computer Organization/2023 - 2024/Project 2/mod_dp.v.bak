@@ -1,0 +1,34 @@
+module mod_dp (
+    input wire clk,
+    input wire rst,
+    input [31:0] A,
+    input [31:0] B,
+    output reg [31:0] result,
+    output reg done
+);
+
+    wire [31:0] difference;
+    wire borrow;
+
+    subtractor sub(
+        .a(A),
+        .b(B),
+        .difference(difference),
+        .borrow(borrow)
+    );
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            result <= 32'b0;
+            done <= 1'b0;
+        end else begin
+            if (A >= B) begin
+                result <= difference;
+            end else begin
+                result <= A;
+                done <= 1'b1;
+            end
+        end
+    end
+
+endmodule

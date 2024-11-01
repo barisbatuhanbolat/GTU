@@ -1,0 +1,285 @@
+\documentclass[a4 paper]{article}
+\usepackage[inner=2.0cm,outer=2.0cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage[ruled]{algorithm2e}
+\usepackage[rgb]{xcolor}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{amsgen,amsmath,amstext,amsbsy,amsopn,tikz,amssymb,tkz-linknodes}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, urlcolor=blue,  linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{rotating}
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+
+\newcommand{\homework}[6]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf CSE 211:~Discrete Mathematics \hfill {\small (#2)}} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\Large \hfill #1  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\it Instructor: {\rm #3} \hfill Name: Barış Batuhan Bolat {\rm #5} \hfill Student Id: 210104004029 {\rm #6}} \hfill}
+       \hbox to 6.28in { {\it Assistant: #4  \hfill #6}}
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{#5 -- #1}{#5 -- #1}
+   \vspace*{4mm}
+}
+
+\newcommand{\problem}[2]{~\\\fbox{\textbf{Problem #1}}\hfill (#2 points)\newline\newline}
+\newcommand{\subproblem}[1]{~\newline\textbf{(#1)}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\VS}{\textrm{VS}}
+\newcommand{\solution}{~\newline\textbf{\textit{(Solution)}} }
+
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbX}{\mathbb{X}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\0}{\mathbf{0}}
+
+
+\begin{document}
+\homework{Homework \#1}{Due: 30/10/22}{Dr. Zafeirakis Zafeirakopoulos}{Başak Karakaş}{}{}
+\textbf{Course Policy}: Read all the instructions below carefully before you start working on the assignment, and before you make a submission.
+\begin{itemize}
+\item It is not a group homework. Do not share your answers to anyone in any circumstance. Any cheating means at least -100 for both sides. 
+\item Do not take any information from Internet.
+\item No late homework will be accepted. 
+\item For any questions about the homework, send an email to bkarakas2018@gtu.edu.tr
+\item Use LaTeX. You can work on the tex file shared with you in the assignment document.
+\item Submit both the tex and pdf files into Homework1. Name of the files should be "\emph{SurnameName$\_$Id.tex}" and "\emph{SurnameName$\_$Id.pdf}".
+\end{itemize}
+
+\problem{1: Sets}{3+3+3+3+3=15}
+Which of the following sets are equal? Show your work step by step.\newline
+\subproblem{a} $\{$t : t is a root of $x^2$ – 6x + 8 = 0$\}$
+\newline
+\subproblem{b} $\{$y : y is a real number in the closed interval [2, 3]$\}$
+\newline
+\subproblem{c} $\{$4, 2, 5, 4$\}$
+\newline
+\subproblem{d} $\{$4, 5, 7, 2$\}$ - $\{$5, 7$\}$
+\newline
+\subproblem{e} $\{$q: q is either the number of sides of a rectangle or the number of digits in any integer between 11 and 99$\}$\\
+\solution
+\newline
+
+(a) For identifying the set(a)  we need to find of $x^2-6x+8=0$
+\newline
+\begin{eqnarray}
+x^2-6x+8=0\nonumber\\
+x^2-4x-2x+8=0\nonumber\\
+x(x-4)-2(x-4)=0\nonumber\\
+(x-2)(x-4)=0\nonumber\\
+x=2 , x=4\nonumber\\
+\nonumber\end{eqnarray}
+
+According to steps I wrote above the results of $x^2-6x+8=0$ are $2$ and $4$. \\
+
+And set of (a) = $\{2,4\}$.\\
+
+The sets of b, c and d are certain.\\
+\begin{eqnarray}
+(b)=[2,3]\nonumber\\
+(c)=\{4,2,5,4\} \equiv \{2,4,5\}\nonumber\\
+(d)=\{4,5,7,2\} - \{5,7\} = \{2,4\}\nonumber\\
+\nonumber\end{eqnarray}
+
+(e) 
+
+\begin{itemize}
+    \item Number of sides of a rectangle = 4 \\
+    \item Number of digits in any integer between 11 and 99 = 2
+\end{itemize}
+
+The set of (e) = {2,4}\\
+
+\textbf{Thus}\\
+\begin{center}
+(a) $\equiv$ (d) $\equiv$ (e)\hspace{1 cm}a = \{2,4\},\\
+\hspace{3.3 cm}d = \{2,4\},\\
+\hspace{3.3 cm}e = \{2,4\},
+\end{center}
+
+
+
+
+\newpage
+\problem{2: Cardinality of Sets}{2+2+2+2=8}
+What is the cardinality of each of these sets? Explain your answers.\\
+\subproblem{a} $\{\emptyset\}$\\
+\subproblem{b} $\{\emptyset,\{\emptyset\}\}$\\
+\subproblem{c} $\{\emptyset,\{\emptyset,\{\emptyset\}\}\}$\\
+\subproblem{d} $\{\emptyset,\{\emptyset,\{\emptyset,\{\emptyset\}\}\}\}$\\
+\solution
+
+(a) Cardinality is 1. This set containes an empty set($\emptyset$).\\
+
+(b) Cardinality is 2. This set containes an empty set($\emptyset$) and another set that contains empty set($\{\emptyset\}$).\\
+
+(c) Cardinality is 2. This set containes an empty set($\emptyset$) and ($\{\emptyset,\{\emptyset\}\}$).$\{\emptyset,\{\emptyset\}\}$ consider as 1.\\
+
+(d) Cardinality is 2. This set containes an empty set($\emptyset$) and ($\{\emptyset,\{\emptyset,\{\emptyset\}\}\}$). $\{\emptyset,\{\emptyset,\{\emptyset\}\}\}$ consider as 1.
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+
+
+
+
+\problem{3: Cartesian Product of Sets}{15}
+Explain why (A $\times$ B) $\times$ (C $\times$ D) and A $\times$ (B $\times$ C) $\times$ D are not the same.\\
+\solution
+\newline
+
+Let $A\times B = K$ and $C\times B = L$\\
+\begin{eqnarray}
+K\times L = \{(k,l); k\in K , l\in L\nonumber\}\\
+k = (a,b), l = (c,d)\nonumber\\
+(A\times B)\times (C\times D) = \{((a,b),(c,d));a\in A,b\in B,c\in C,d\in D\}\nonumber\\
+\nonumber\end{eqnarray}
+
+Let $B\times C = M$\\
+\begin{eqnarray}
+M = \{m;m\in M\}\nonumber\\
+A\times M\times D = \{(a,m,d);a\in A,m\in M,d\in D\}\nonumber\\
+m = (b,c)\nonumber\\
+A\times (B\times C)\times D = \{(a,(b,c),d);a\in A,b\in B,c\in C,d\in D\}\nonumber\\
+\nonumber\end{eqnarray}
+\begin{center}
+    $((a,b),(c,d)) \neq (a,(b,c),d)$\\
+    \textbf{Result}\\
+    $(A\times B)\times (C\times D) \neq A\times (B\times C)\times D$\\
+\end{center}
+
+\newpage
+\problem{4: Cartesian Product of Sets in Algorithms }{25}
+Let A, B and C be sets which have different cardinalities. Let (p, q, r) be each triple of A $\times$ B $\times$ C where p $\in$ A, q $\in$ B and r $\in$ C. Design an algorithm which finds all the triples that are satisfying the criteria: p $\leq$ q and q $\geq$ r. Write the pseudo code of the algorithm in your solution.\newline
+\newline
+For example: Let the set A, B and C be as A = $\{$ 3, 5, 7 $\}$, B = $\{$ 3, 6 $\}$ and C = $\{$ 4, 6, 9 $\}$. Then the output should be : $\{$ (3, 6, 4), (3, 6, 6), (5, 6, 4), (5, 6, 6) $\}$. \newline
+\newline
+(Note: Assume that you have sets of A, B, C as an input argument.)\newline
+\solution
+
+\begin{algorithm}
+\SetAlgoLined
+\KwIn{The sets of A, B, C}
+\eIf{write a condition}{
+    Statements
+}{
+ Statements
+}
+ When you want to write a for loop, you can use: \newline
+\For{write a condition}{
+
+}
+ When you want to write a while loop, you can use: \newline
+\While{write a condition}{
+If you need to return, use \Return
+}
+ For any additional things you have to do while writing your pseudo code, Google "How to use algorithm2e in Latex?".
+\caption{Pseudo Code of Your Algorithm}
+\end{algorithm}
+
+\begin{algorithm}
+\SetAlgoLined
+\KwIn{The sets of A, B, C}
+\For {p in A}{
+    \For {q in B}{
+         \For {r in C}{
+            \eIf{$p \leq q$ and $q\geq r$}{
+                print $(p,q,r),$
+            }{
+             continue
+            }
+         }
+    }
+}
+\caption{Solution}
+\end{algorithm}
+
+\newpage
+\problem{5: Functions}{16}
+If f and f $\circ$ g are one-to-one, does it follow that g is one-to-one? Justify your answer.\\
+\solution\\
+\begin{itemize}
+    \item Assume g is not one-to-one then $a \neq b$ in such that $g(a) = g(b)$
+    \item f and $f\circ g$ are one-to-one $f\circ g(a) = f\circ g(b)$ then $g(a) = g(b)$
+    \item With $a\neq b$,which contradicts $f\circ g$ one-to-one
+    \item Then $g$ must be one-to-one
+\end{itemize}
+
+\problem{6: Functions}{7+7+7=21}
+Determine whether the function $f:$ $\mathbb{Z}\times\mathbb{Z}\to\mathbb{Z}$ is onto if\\
+\subproblem{a} $f(m,n)=2m-n$\\
+\subproblem{b} $f(m,n)=m^2-n^2$\\
+\subproblem{c} $f(m,n)=\mid m\mid - \mid n\mid$\\
+\solution\\
+
+The function $f:A\xrightarrow[]{} B$ is onto if range of function same as domain. $\Rightarrow f(A) = B$\\
+
+(a) For any pair $(0,n)\in \mathbb{Z}\times \mathbb{Z}$
+\begin{eqnarray}
+f(0,n) = 2(0)-n\nonumber\\
+f(0,n) = n\nonumber\\
+Therefore ,\forall n\in \mathbb{Z}
+\nonumber\end{eqnarray}
+
+So $f$ is \textbf{onto}.\\
+
+(b) $f(m,n) = m^2-n^2$ is a difference of two perfect squares.
+\begin{eqnarray}
+f(1,0) = 1^2-0^2 = 1\nonumber\\
+f(2,1) = 2^2-1^2 = 3\nonumber\\
+f(3,2) = 3^2-2^2 = 5\nonumber\\
+&\vdots\nonumber\\
+\nonumber\end{eqnarray}
+
+
+According to the above, some elements in the image set do not have a pre image in the domain.(For ex. 2) So $f$ is \textbf{not onto}.\\
+
+(c) For any pair $(m,0) = \mathbb{Z}\times \mathbb{Z}$
+\begin{align}
+f(m,0) &= \mid m\mid - \mid 0\mid\nonumber\\
+       &= \mid m\mid\nonumber\\
+       &= \pm m\nonumber\\
+Therefore ,\forall \pm m\in \mathbb{Z}\nonumber\\
+\end{align}
+
+So f is \textbf{onto}
+
+\newpage
+\problem{7: Functions}{Bonus 20}
+Suppose that $f$ is a function from $A$ to $B$, where $A$ and $B$ are finite sets with $\mid A\mid=\mid B\mid$. Show that $f$ is one-to-one if and only if it is onto.\\
+\solution
+\newline
+\end{document}

@@ -1,0 +1,4 @@
+- Inside "Project1" folder
+    - make clean
+    - make mykernel.iso
+- Load mykernel.iso to VirtualBox

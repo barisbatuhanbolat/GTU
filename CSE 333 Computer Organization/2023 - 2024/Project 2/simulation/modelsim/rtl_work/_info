@@ -1,0 +1,524 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/simulation/modelsim
+v_2x1Mux
+Z1 !s110 1702226198
+!i10b 1
+!s100 XLoH<mNKDJ<gTH<_aUj4S0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOBE?R1:ddCAlVb;0O?fD]2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1702219601
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_2x1Mux.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_2x1Mux.v
+!i122 17
+L0 1 8
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1702226198.000000
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_2x1Mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_2x1Mux.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2
+Z8 tCvgOpt 0
+n@_2x1@mux
+v_4x1Mux
+R1
+!i10b 1
+!s100 9e^6d>W^6GWHdOU21JiS:2
+R2
+IUUY9lDM@5lo:YTa:Hnk832
+R3
+R0
+w1702159306
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_4x1Mux.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_4x1Mux.v
+!i122 16
+L0 1 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_4x1Mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_4x1Mux.v|
+!i113 1
+R6
+R7
+R8
+n@_4x1@mux
+v_8x1Mux
+R1
+!i10b 1
+!s100 ]W4`;4BzN;NVE4aGdjhZI3
+R2
+IYUfFJ2V[kc]O9l<l2AVj]2
+R3
+R0
+w1702219509
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_8x1Mux.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_8x1Mux.v
+!i122 15
+L0 1 16
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_8x1Mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_8x1Mux.v|
+!i113 1
+R6
+R7
+R8
+n@_8x1@mux
+vadder
+Z9 !s110 1702226195
+!i10b 1
+!s100 MAPVEAYn^_3b?[XjCge`S1
+R2
+IkAAlg;HjN;:LoaL2ggeP?3
+R3
+R0
+w1701974777
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/adder.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/adder.v
+!i122 6
+L0 1 36
+R4
+r1
+!s85 0
+31
+Z10 !s108 1702226195.000000
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/adder.v|
+!i113 1
+R6
+R7
+R8
+valu
+R9
+!i10b 1
+!s100 5jX[3OiP8MJ[];5l^WQZN1
+R2
+If7R`al6jcDF:[<AnfTi9d2
+R3
+R0
+w1702165301
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu.v
+!i122 4
+L0 1 53
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu.v|
+!i113 1
+R6
+R7
+R8
+valu_testbench
+R1
+!i10b 1
+!s100 hB;3joj_`KzXBTn>joDQ62
+R2
+Ib7QT0f6746cL?g8BSbVBX3
+R3
+R0
+w1702226174
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu_testbench.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu_testbench.v
+!i122 18
+L0 1 126
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu_testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu_testbench.v|
+!i113 1
+R6
+R7
+R8
+vALUand
+Z11 !s110 1702226194
+!i10b 1
+!s100 1Lf?4zABCY`;G0EjIVZ;S2
+R2
+IM4^oPZZd9YCC;Q;;o[^Pk2
+R3
+R0
+w1701801020
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUand.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUand.v
+!i122 0
+Z12 L0 1 39
+R4
+r1
+!s85 0
+31
+Z13 !s108 1702226194.000000
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUand.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUand.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@uand
+vALUless_than
+R1
+!i10b 1
+!s100 hh[R3>GSncRfn3c7H4h3P0
+R2
+IESl=QRCajSYN6g75_Bj=n0
+R3
+R0
+w1702166029
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUless_than.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUless_than.v
+!i122 14
+L0 1 10
+R4
+r1
+!s85 0
+31
+Z14 !s108 1702226197.000000
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUless_than.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUless_than.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@uless_than
+vALUnor
+R9
+!i10b 1
+!s100 n?3z<C6X1DgoJ2F[6fi[a2
+R2
+I?V5Xnc9Uc>X]6L2f<=VJh3
+R3
+R0
+w1701714734
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUnor.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUnor.v
+!i122 3
+R12
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUnor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUnor.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@unor
+vALUor
+R11
+!i10b 1
+!s100 5k<mIH>2cO:GQUdzZe?8e0
+R2
+ISFYIo_?]?o4c>6WA1KLoh2
+R3
+R0
+w1701714640
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUor.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUor.v
+!i122 1
+R12
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUor.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@uor
+vALUxor
+R11
+!i10b 1
+!s100 IF^Dk1WaNzn9>;4bO>nGQ1
+R2
+IDdWnI_^dW`cl^O@B_VVA70
+R3
+R0
+w1701714683
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUxor.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUxor.v
+!i122 2
+R12
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUxor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUxor.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@uxor
+vcla_16bit
+R9
+!i10b 1
+!s100 KCVUDInkm5]>h]c2D0G3U3
+R2
+I@nkEAl^SFJCJOLh[gWD]33
+R3
+R0
+w1701971294
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_16bit.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_16bit.v
+!i122 8
+L0 1 50
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_16bit.v|
+!i113 1
+R6
+R7
+R8
+vcla_4bit
+R9
+!i10b 1
+!s100 <a7MTgRmPSV>4B>G?=`5]1
+R2
+Iod_FzTI<AP;o]Qg3Rm4j12
+R3
+R0
+w1701971312
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_4bit.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_4bit.v
+!i122 7
+L0 1 42
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_4bit.v|
+!i113 1
+R6
+R7
+R8
+vcomparator
+Z15 !s110 1702226197
+!i10b 1
+!s100 ]_jjPMG82k`JPAMX]K@Ol1
+R2
+ISFR<Q]X<jVOY?KU@NSZ=W0
+R3
+R0
+w1702147483
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/comparator.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/comparator.v
+!i122 13
+L0 1 12
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/comparator.v|
+!i113 1
+R6
+R7
+R8
+vfull_subtractor
+R9
+!i10b 1
+!s100 DV_J1UiNlaND3ZaU@hg0m1
+R2
+IU`OVE@WIaVG1mMe>NDiTm1
+R3
+R0
+Z16 w1702028064
+Z17 8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v
+Z18 FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v
+!i122 9
+L0 50 15
+R4
+r1
+!s85 0
+31
+R10
+Z19 !s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v|
+Z20 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v|
+!i113 1
+R6
+R7
+R8
+vfullAdder
+R9
+!i10b 1
+!s100 _N<kj[Y`7?J84R?T4PYjo1
+R2
+Ih3eUkYF_D31hHVMh:1OWT0
+R3
+R0
+w1702219432
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/fullAdder.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/fullAdder.v
+!i122 5
+L0 1 13
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/fullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/fullAdder.v|
+!i113 1
+R6
+R7
+R8
+nfull@adder
+vmod
+R15
+!i10b 1
+!s100 N;MhkP^>ngZPz^^`YPGfU1
+R2
+I_9co_V3i`f<Hj[Z;YE<EY3
+R3
+R0
+w1702152856
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod.v
+!i122 12
+L0 1 31
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod.v|
+!i113 1
+R6
+R7
+R8
+vmod_cu
+R15
+!i10b 1
+!s100 Y>MD9_ZENYJ>EVi^@H;>B0
+R2
+I:JgN2RWb>b[WJOjjNkVzg2
+R3
+R0
+w1702142073
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_cu.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_cu.v
+!i122 11
+L0 1 52
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_cu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_cu.v|
+!i113 1
+R6
+R7
+R8
+vmod_dp
+R15
+!i10b 1
+!s100 WHU5aIf;>KeCdo@QzT_Uj1
+R2
+INkAcg:ZI??L424elCe@:U3
+R3
+R0
+w1702220073
+8C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_dp.v
+FC:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_dp.v
+!i122 10
+L0 1 28
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_dp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2|C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_dp.v|
+!i113 1
+R6
+R7
+R8
+vsubtractor
+R9
+!i10b 1
+!s100 c:^cm[EgifIJ?Fm^2jT[U2
+R2
+IFX[7SnI?5TD7aPXzRXLQD1
+R3
+R0
+R16
+R17
+R18
+!i122 9
+L0 1 48
+R4
+r1
+!s85 0
+31
+R10
+R19
+R20
+!i113 1
+R6
+R7
+R8
+vsubtractor_adder
+R9
+!i10b 1
+!s100 L0[HeoldAQQ93Ig;@X_9N1
+R2
+If=;Mn_Haf6>f8Y=<6A_]V0
+R3
+R0
+R16
+R17
+R18
+!i122 9
+L0 66 44
+R4
+r1
+!s85 0
+31
+R10
+R19
+R20
+!i113 1
+R6
+R7
+R8

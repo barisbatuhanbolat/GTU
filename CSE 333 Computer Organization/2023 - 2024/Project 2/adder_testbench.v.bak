@@ -1,0 +1,16 @@
+`define DELAY 20
+module adder_testbanch();
+reg [31:0] a, b;
+wire [31:0] sum;
+wire cout;
+
+// TTT stands for twenty two bit adder testbench
+adder TTT(a,b,sum,cout);
+
+
+initial
+begin
+$monitor("time = %2d, a =%8h, b=%8h, sum=%8h, carry_out=%1b", $time, a, b, sum, cout);
+end
+ 
+endmodule 

@@ -1,0 +1,37 @@
+module sign_extender_6_to_32 (
+		input [15:0] in, 
+		output [31:0] out
+);
+	or(out[0], in[0], 1'b0);
+	or(out[1], in[1], 1'b0);
+	or(out[2], in[2], 1'b0);
+	or(out[3], in[3], 1'b0);
+	or(out[4], in[4], 1'b0);
+	or(out[5], in[5], 1'b0);
+	and(out[6], in[6], 1'b0);
+	and(out[7], in[7], 1'b0);
+	and(out[8], in[8], 1'b0);
+	and(out[9], in[9], 1'b0);
+	and(out[10], in[10],1'b0);
+	and(out[11], in[11],1'b0);
+	and(out[12], in[12],1'b0);
+	and(out[13], in[13],1'b0);
+	and(out[14], in[14],1'b0);
+	and(out[15], in[15],1'b0);
+	and(out[16], in[5],1'b0);
+	and(out[17], in[5],1'b0);
+	and(out[18], in[5],1'b0);
+	and(out[19], in[5],1'b0);
+	and(out[20], in[5],1'b0);
+	and(out[21], in[5],1'b0);
+	and(out[22], in[5],1'b0);
+	and(out[23], in[5],1'b0);
+	and(out[24], in[5],1'b0);
+	and(out[25], in[5],1'b0);
+	and(out[26], in[5],1'b0);
+	and(out[27], in[5],1'b0);
+	and(out[28], in[5],1'b0);
+	and(out[29], in[5],1'b0);
+	and(out[30], in[5],1'b0);
+	and(out[31], in[5],1'b0);
+endmodule

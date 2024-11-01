@@ -1,0 +1,214 @@
+$date
+	Thu Jan 18 14:14:27 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module control_tb $end
+$var reg 6 ! opCode [5:0] $end
+$var wire 1 " regDst $end
+$var wire 1 # branch $end
+$var wire 1 $ memRead $end
+$var wire 1 % memWrite $end
+$var wire 1 & ALUsrc $end
+$var wire 1 ' regWrite $end
+$var wire 1 ( jump $end
+$var wire 1 ) byteOperations $end
+$var wire 1 * move $end
+$var wire 1 + ALUop [2] $end
+$var wire 1 , ALUop [1] $end
+$var wire 1 - ALUop [0] $end
+
+$scope module dut $end
+$var wire 1 . opCode [5] $end
+$var wire 1 / opCode [4] $end
+$var wire 1 0 opCode [3] $end
+$var wire 1 1 opCode [2] $end
+$var wire 1 2 opCode [1] $end
+$var wire 1 3 opCode [0] $end
+$var wire 1 " regDst $end
+$var wire 1 # branch $end
+$var wire 1 $ memRead $end
+$var wire 1 % memWrite $end
+$var wire 1 & ALUsrc $end
+$var wire 1 ' regWrite $end
+$var wire 1 ( jump $end
+$var wire 1 ) byteOperations $end
+$var wire 1 * move $end
+$var wire 1 + ALUop [2] $end
+$var wire 1 , ALUop [1] $end
+$var wire 1 - ALUop [0] $end
+$var wire 1 4 opCode0n $end
+$var wire 1 5 opCode1n $end
+$var wire 1 6 opCode2n $end
+$var wire 1 7 opCode3n $end
+$var wire 1 8 opCode4n $end
+$var wire 1 9 opCode5n $end
+$var wire 1 : rtype_wire $end
+$var wire 1 ; addi_wire $end
+$var wire 1 < subtri_wire $end
+$var wire 1 = andi_wire $end
+$var wire 1 > ori_wire $end
+$var wire 1 ? lw_wire $end
+$var wire 1 @ sw_wire $end
+$var wire 1 A lb_wire $end
+$var wire 1 B sb_wire $end
+$var wire 1 C slti_wire $end
+$var wire 1 D beq_wire $end
+$var wire 1 E jump_wire $end
+$var wire 1 F move_wire $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+1"
+1#
+1$
+1%
+1&
+1'
+0(
+0)
+0*
+z-
+z,
+z+
+14
+15
+16
+17
+18
+19
+1:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+03
+02
+01
+00
+0/
+0.
+$end
+#10
+b10 !
+12
+1;
+05
+0:
+#20
+b11 !
+13
+1<
+04
+0;
+#30
+b100 !
+03
+02
+11
+0<
+14
+15
+06
+1=
+#40
+b101 !
+13
+1>
+04
+0=
+#50
+b1000 !
+03
+01
+10
+0>
+14
+16
+07
+1?
+#60
+b10000 !
+00
+1/
+0?
+17
+08
+1@
+#70
+b1001 !
+13
+10
+0/
+04
+07
+0@
+18
+1A
+1)
+#80
+b10001 !
+00
+1/
+0A
+17
+08
+0)
+1B
+#90
+b111 !
+12
+11
+0/
+05
+06
+0B
+18
+1C
+#100
+b100011 !
+01
+1.
+0C
+16
+09
+1D
+#110
+b111000 !
+03
+02
+10
+1/
+0D
+14
+15
+07
+08
+1E
+1(
+#120
+b100000 !
+00
+0/
+0E
+17
+18
+0(
+1F
+1*

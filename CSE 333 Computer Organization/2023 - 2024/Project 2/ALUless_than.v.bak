@@ -1,0 +1,9 @@
+module ALUless_than(
+		input [31:0] a,b,
+		output less_than
+);
+		wire [31:0] difference;
+		wire borrow;
+		subtractor(a,b,difference,borrow);
+		
+		

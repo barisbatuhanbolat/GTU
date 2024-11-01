@@ -1,0 +1,73 @@
+module control_tb; // top-level testbench module
+  // declare signals for DUT connection
+  reg [5:0] opCode; // 6-bit input for the opcode
+  wire regDst, branch, memRead, memWrite, ALUsrc, regWrite, jump, byteOperations, move; // output signals
+  wire [2:0] ALUop; // 3-bit output for the ALU operation
+  
+  // instantiate the DUT module
+  control dut (opCode, regDst, branch, memRead, memWrite, ALUop, ALUsrc, regWrite, jump, byteOperations, move);
+  
+  // generate input stimuli
+  initial begin
+    // create a waveform file
+    $dumpfile("control_tb.vcd");
+    $dumpvars(0, control_tb);
+    
+    // initialize the input signals
+    opCode = 6'b000000; // R-type instruction
+    #10; // wait for 10 time units
+    
+    // change the input signals
+    opCode = 6'b000010; // add immediate instruction
+    #10;
+    
+    opCode = 6'b000011; // subtract immediate instruction
+    #10;
+    
+    opCode = 6'b001000; // load word instruction
+    #10;
+    
+    opCode = 6'b010000; // store word instruction
+    #10;
+    
+    opCode = 6'b001001; // load byte instruction
+    #10;
+    
+    opCode = 6'b010001; // store byte instruction
+    #10;
+    
+    opCode = 6'b000111; // set on less than instruction
+    #10;
+    
+    opCode = 6'b000111; // set on less than immediate instruction
+    #10;
+    
+    opCode = 6'b100011; // branch on equal instruction
+    #10;
+    
+    opCode = 6'b100111; // branch on not equal instruction
+    #10;
+    
+    opCode = 6'b111000; // jump instruction
+    #10;
+    
+    opCode = 6'b111001; // jump and link instruction
+    #10;
+    
+    opCode = 6'b000000; // jump register instruction
+    #10;
+    
+    opCode = 6'b100000; // move instruction
+    #10;
+    
+    // end the simulation
+    $finish;
+  end
+  
+  // monitor the output values
+  initial begin
+    $monitor("opCode = %b, regDst = %b, branch = %b, memRead = %b, memWrite = %b, ALUop = %b, ALUsrc = %b, regWrite = %b, jump = %b, byteOperations = %b, move = %b",
+    opCode, regDst, branch, memRead, memWrite, ALUop, ALUsrc, regWrite, jump, byteOperations, move);
+  end
+  
+endmodule

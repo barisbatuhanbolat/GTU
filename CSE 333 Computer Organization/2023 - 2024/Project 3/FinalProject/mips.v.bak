@@ -1,0 +1,35 @@
+module mips(prog_ctr,updatedPc,result,clk);
+input clk;
+input [31:0] prog_ctr;
+output [31:0] updatedPc;
+output [31:0] result;
+
+wire [15:0] instruction;
+wire [9:0] dummy;
+wire [31:0] pcRes,branchRes,shiftRes,aluRes,aluInp2Res,signExtendRes,memoryRes;
+wire[2:0] aluCtrRes,writeRegRes;
+wire isBranch,regDst,branch,bne,memRead,memToReg,memWrite,ALUSrc,regWrite,zero;
+wire [2:0] aluOp;
+wire [31:0] prog_ctr;
+wire [31:0] read_data1,read_data2,write_data;
+
+sign_extender_6_to_32 signExtender(instruction[5:0],signExtendRes);
+_32_bit_2_input_mux readData2orSignExtend(aluInp2Res,read_data2,signExtendRes,ALUSrc);
+left_shifter_2bit shiftLeft(signExtendRes,shiftRes);
+instr_memory instructionMem(prog_ctr,instruction,clk);
+control controller(instruction[15:12],regDst,branch,bne,memRead,memToReg,aluOp,memWrite,ALUSrc,regWrite);
+_3bit_2_input_mux chooseWriteReg(writeRegRes,instruction[8:6],instruction[5:3],regDst);
+mips_registers registers(read_data1,read_data2,write_data,instruction[11:9],instruction[8:6],writeRegRes,regWrite,clk);
+alu_control aluController(aluOp,instruction[2:0],aluCtrRes);
+alu alunit(aluRes,zero,read_data1,aluInp2Res,aluCtrRes);
+assign isBranch = (branch&zero) | (bne & ~zero);
+
+_32_bit_adder pcAdder(pcRes,dummy[0],dummy[1],prog_ctr,32'd4,1'b0);
+_32_bit_adder branchAdder(branchRes,dummy[2],dummy[3],pcRes,shiftRes,1'b0);
+_32_bit_2_input_mux branchOrNot(updatedPc,pcRes,branchRes,isBranch);
+
+data_memory dataMem(memWrite,memRead,aluRes,read_data2,memoryRes,clk);
+_32_bit_2_input_mux memoryResORaluRes(write_data,aluRes,memoryRes,memToReg);
+assign result = write_data;
+
+endmodule

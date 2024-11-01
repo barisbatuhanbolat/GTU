@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Baris/Desktop/quartusProjects/CSE331/FinalProject/simulation/qsim
+valu_control
+Z1 !s110 1705611751
+!i10b 1
+!s100 78@B8M`OP;Ggc3GbQeRb61
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I?3bgHzYPac5Z1<fH[YUic0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1705611750
+Z5 8FinalProject.vo
+Z6 FFinalProject.vo
+!i122 152
+L0 32 249
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1705611751.000000
+Z9 !s107 FinalProject.vo|
+Z10 !s90 -work|work|FinalProject.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+valu_control_vlg_vec_tst
+R1
+!i10b 1
+!s100 WLXH<S@d2:TcP2]:E?4kZ3
+R2
+IX6`4AI?edEJNzUJOWjz2X3
+R3
+R0
+R4
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+!i122 153
+L0 30 80
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R11
+R12
+vcontrol_unit
+Z13 !s110 1705588138
+!i10b 1
+!s100 e4=oe3F=9<hX60GW<n2k:1
+R2
+IRPBVOO2jMWn6nHM]3FKlT3
+R3
+R0
+Z14 w1705588137
+R5
+R6
+!i122 106
+L0 32 617
+R7
+r1
+!s85 0
+31
+Z15 !s108 1705588138.000000
+R9
+R10
+!i113 1
+R11
+R12
+vcontrol_unit_vlg_vec_tst
+R13
+!i10b 1
+!s100 FN8IVMGEGac98aXD896K?1
+R2
+I4RLShTNZf1Og?SnmLgi3[0
+R3
+R0
+R14
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+!i122 107
+L0 30 93
+R7
+r1
+!s85 0
+31
+R15
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R11
+R12
+vinstruction_block
+Z16 !s110 1705655345
+!i10b 1
+!s100 c1dkz=o>_@gm>Z]?Q75Kn3
+R2
+ID@i4j?`4k42;WaLk_2A8L1
+R3
+R0
+Z17 w1705655344
+R5
+R6
+!i122 158
+L0 32 2817
+R7
+r1
+!s85 0
+31
+Z18 !s108 1705655345.000000
+R9
+R10
+!i113 1
+R11
+R12
+vinstruction_block_vlg_vec_tst
+R16
+!i10b 1
+!s100 bN2hODgU00bXQ<[:DMUS_0
+R2
+IJ6R_X_MSOCcJYPJYJ<9nb0
+R3
+R0
+R17
+8Waveform5.vwf.vt
+FWaveform5.vwf.vt
+!i122 159
+L0 30 211
+R7
+r1
+!s85 0
+31
+R18
+!s107 Waveform5.vwf.vt|
+!s90 -work|work|Waveform5.vwf.vt|
+!i113 1
+R11
+R12
+vmips
+Z19 !s110 1705660904
+!i10b 1
+!s100 FQk4DmUR1LlloiYKKo<GR0
+R2
+IkH9<ZJAboOJQ:]5:Q^R`U0
+R3
+R0
+w1705660903
+R5
+R6
+!i122 164
+L0 32 9912
+R7
+r1
+!s85 0
+31
+!s108 1705660903.000000
+R9
+R10
+!i113 1
+R11
+R12
+vmips_vlg_vec_tst
+R19
+!i10b 1
+!s100 RAnZBR4^?3=BJ5DmAQ:Y52
+R2
+IAQo<_mRFGnGeP^E9:Pz1Q3
+R3
+R0
+w1705660902
+8Waveform6.vwf.vt
+FWaveform6.vwf.vt
+!i122 165
+L0 30 77
+R7
+r1
+!s85 0
+31
+!s108 1705660904.000000
+!s107 Waveform6.vwf.vt|
+!s90 -work|work|Waveform6.vwf.vt|
+!i113 1
+R11
+R12

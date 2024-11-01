@@ -1,0 +1,35 @@
+// mips testbench code
+module mips_testbench;
+
+  // input clock signal
+  reg clock;
+  
+  // instantiate the mips module
+  mips dut(clock);
+  
+  // initialize the clock signal
+  initial clock = 0;
+  
+  // toggle the clock every 10 ns
+  always #10 clock = ~clock;
+  
+  // load the instructions and data from files
+  initial begin
+    $readmemb("instructions.mem", dut.inst_block.instructions);
+    $readmemb("memory.mem", dut.mem_block.registers);
+    $readmemb("registers.mem", dut.reg_block.registers);
+  end
+  
+  // dump the waveforms to a file
+  initial begin
+    $dumpfile("mips_test.vcd");
+    $dumpvars(0, mips_testbench);
+  end
+  
+  // run the simulation for 1000 ns
+  initial begin
+    #1000;
+    $finish;
+  end
+  
+endmodule

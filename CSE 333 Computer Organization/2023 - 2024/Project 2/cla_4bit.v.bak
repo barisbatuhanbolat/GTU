@@ -1,0 +1,37 @@
+// Define a module for a 4-bit carry lookahead adder
+module cla_4bit(
+    input [3:0] a, b, // Inputs for the adder
+    input cin, // Carry in for the adder
+    output [3:0] sum, // Sum output for the adder
+    output cout // Carry out for the adder
+    );
+    
+    // Declare the wires for the propagate and generate signals
+    wire [3:0] p, g;
+    
+    // Declare the wires for the AND and OR gates
+    wire a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, o1, o2, o3, o4;
+    
+    // Use AND and OR gates to generate the propagate and generate signals
+    or(p[0], a[0], b[0]);
+    or(p[1], a[1], b[1]);
+    or(p[2], a[2], b[2]);
+    or(p[3], a[3], b[3]);
+    and(g[0], a[0], b[0]);
+    and(g[1], a[1], b[1]);
+    and(g[2], a[2], b[2]);
+    and(g[3], a[3], b[3]);
+    
+    // Use the propagate and generate signals to calculate the carry out
+    and(a1, p[3], g[2]);
+    and(a2, p[3], p[2], g[1]);
+    and(a3, p[3], p[2], p[1], cin);
+    or(cout, g[3], a1, a2, a3);
+    
+    // Instantiate four full adders to generate the sum outputs
+    fullAdder fa0(a[0], b[0], cin, sum[0], c0);
+    fullAdder fa1(a[1], b[1], c0, sum[1], c1);
+    fullAdder fa2(a[2], b[2], c1, sum[2], c2);
+    fullAdder fa3(a[3], b[3], c2, sum[3], c3);
+    
+endmodule

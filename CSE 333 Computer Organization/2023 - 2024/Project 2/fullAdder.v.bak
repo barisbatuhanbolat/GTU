@@ -1,0 +1,19 @@
+module fullAdder (
+  input A, 
+  input B, 
+  input Cin, 
+  output Sum, 
+  output Cout
+);
+
+  wire xor1, and1, and2;
+
+  xor(xor1, A, B);
+  xor(Sum, xor1, Cin);
+
+  and(and1, A, B);
+  and(and2, xor1, Cin);
+
+  or(Cout, and1, and2);
+
+endmodule

@@ -1,0 +1,268 @@
+# Reading pref.tcl
+# do hw2ALU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying E:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUand.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:34 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUand.v 
+# -- Compiling module ALUand
+# 
+# Top level modules:
+# 	ALUand
+# End time: 19:36:34 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:34 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUor.v 
+# -- Compiling module ALUor
+# 
+# Top level modules:
+# 	ALUor
+# End time: 19:36:34 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUxor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:34 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUxor.v 
+# -- Compiling module ALUxor
+# 
+# Top level modules:
+# 	ALUxor
+# End time: 19:36:34 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUnor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:34 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUnor.v 
+# -- Compiling module ALUnor
+# 
+# Top level modules:
+# 	ALUnor
+# End time: 19:36:35 on Dec 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:35 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:36:35 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/fullAdder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:35 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/fullAdder.v 
+# -- Compiling module fullAdder
+# 
+# Top level modules:
+# 	fullAdder
+# End time: 19:36:35 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:35 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 19:36:35 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:35 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_4bit.v 
+# -- Compiling module cla_4bit
+# 
+# Top level modules:
+# 	cla_4bit
+# End time: 19:36:35 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_16bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:35 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/cla_16bit.v 
+# -- Compiling module cla_16bit
+# 
+# Top level modules:
+# 	cla_16bit
+# End time: 19:36:35 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:35 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v 
+# -- Compiling module subtractor
+# -- Compiling module full_subtractor
+# -- Compiling module subtractor_adder
+# 
+# Top level modules:
+# 	subtractor
+# End time: 19:36:35 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_dp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:37 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_dp.v 
+# -- Compiling module mod_dp
+# 
+# Top level modules:
+# 	mod_dp
+# End time: 19:36:37 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_cu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:37 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod_cu.v 
+# -- Compiling module mod_cu
+# 
+# Top level modules:
+# 	mod_cu
+# End time: 19:36:37 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:37 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/mod.v 
+# -- Compiling module mod
+# 
+# Top level modules:
+# 	mod
+# End time: 19:36:37 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/comparator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:37 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/comparator.v 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 19:36:37 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUless_than.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:37 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/ALUless_than.v 
+# -- Compiling module ALUless_than
+# 
+# Top level modules:
+# 	ALUless_than
+# End time: 19:36:38 on Dec 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_8x1Mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:38 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_8x1Mux.v 
+# -- Compiling module _8x1Mux
+# 
+# Top level modules:
+# 	_8x1Mux
+# End time: 19:36:38 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_4x1Mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:38 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_4x1Mux.v 
+# -- Compiling module _4x1Mux
+# 
+# Top level modules:
+# 	_4x1Mux
+# End time: 19:36:38 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_2x1Mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:38 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/_2x1Mux.v 
+# -- Compiling module _2x1Mux
+# 
+# Top level modules:
+# 	_2x1Mux
+# End time: 19:36:38 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2 {C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu_testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:38 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2" C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu_testbench.v 
+# -- Compiling module alu_testbench
+# 
+# Top level modules:
+# 	alu_testbench
+# End time: 19:36:38 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  alu_testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" alu_testbench 
+# Start time: 19:36:38 on Dec 10,2023
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.ALUand
+# Loading work.ALUor
+# Loading work.ALUxor
+# Loading work.ALUnor
+# Loading work.ALUless_than
+# Loading work.subtractor
+# Loading work.subtractor_adder
+# Loading work.full_subtractor
+# Loading work.adder
+# Loading work.cla_16bit
+# Loading work.cla_4bit
+# Loading work.fullAdder
+# Loading work.mod
+# Loading work.mod_dp
+# Loading work.comparator
+# Loading work.mod_cu
+# Loading work._8x1Mux
+# Loading work._4x1Mux
+# Loading work._2x1Mux
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'C0'. The port definition is at: C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v(71).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_testbench/uut/less/sub/sub File: C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/adder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_testbench/uut/add_inst File: C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu.v Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'C0'. The port definition is at: C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v(71).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_testbench/uut/sub_inst/sub File: C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'C0'. The port definition is at: C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v(71).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_testbench/uut/mod_inst/dp_inst/sub/sub File: C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/subtractor.v Line: 46
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Testing ALU with different opcodes and operands
+# -------------------------------------------------
+# AND: A = 00000000000000000000000000001010, B = 00000000000000000000000000001111, result = 00000000000000000000000000001010
+# AND: A = 00000000000000000000000011111111, B = 00000000000000000000000000000000, result = 00000000000000000000000000000000
+# OR: A = 00000000000000000000000000001010, B = 00000000000000000000000000001111, result = 00000000000000000000000000001111
+# OR: A = 00000000000000000000000011111111, B = 00000000000000000000000000000000, result = 00000000000000000000000011111111
+# XOR: A = 00000000000000000000000000001010, B = 00000000000000000000000000001111, result = 00000000000000000000000000000101
+# XOR: A = 00000000000000000000000011111111, B = 00000000000000000000000000000000, result = 00000000000000000000000011111111
+# NOR: A = 00000000000000000000000000001010, B = 00000000000000000000000000001111, result = 11111111111111111111111111110000
+# NOR: A = 00000000000000000000000011111111, B = 00000000000000000000000000000000, result = 11111111111111111111111100000000
+# Less than: A = 00000000000000000000000000001010, B = 00000000000000000000000000001111, result = 1
+# Less than: A = 00000000000000000000000000000000, B = 00000000000000000000000011111111, result = 1
+# Addition: A = 00000000000000000000000000001111, B = 00000000000000000000000000001010, result = 00000000000000000000000000011001
+# Addition: A = 00000000000000000000000011111111, B = 00000000000000000000000100000000, result = 00000000000000000000000111111111
+# Subtraction: A = 00000000000000000000000000001111, B = 00000000000000000000000000001010, result = 00000000000000000000000000000101
+# Subtraction: A = 00000000000000000000000000000001, B = 00000000000000000000000011111111, result = 11111111111111111111111100000010
+# Mod: A = 00000000000000000000000000001010, B = 00000000000000000000000000001111, result = 00000000000000000000000000001010
+# Mod: A = 00000000000000000000000000001111, B = 00000000000000000000000000000101, result = 00000000000000000000000000000000
+# ** Note: $stop    : C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu_testbench.v(121)
+#    Time: 410 ps  Iteration: 0  Instance: /alu_testbench
+# Break in Module alu_testbench at C:/Users/Baris/Desktop/quartusProjects/CSE331/hw2/alu_testbench.v line 121
+# End time: 19:37:26 on Dec 10,2023, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 4
